@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/upperCircle_splash"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/round_circle"
+        android:elevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:importantForAccessibility="no"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/lowerCircle_splash"
+        android:layout_width="250dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginEnd="284dp"
+        android:background="@drawable/round_circle"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="-400dp"
+        tools:ignore="VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/chip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/shruti"
+        android:letterSpacing=".5"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/lightGray"
+        android:textFontWeight="600"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_icon"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

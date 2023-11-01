@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darkBlue"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/lowerCircle_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperCircle_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/adminBtn"
+                android:text="@string/admin_btn"
+                style="@style/MainBtn" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/takeQuizBtn"
+                android:text="@string/take_quiz_btn"
+                style="@style/MainBtn" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/contactBtn"
+                android:text="@string/contact_btn"
+                style="@style/MainBtn" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/upperCircle_main"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="592dp"
+        android:background="@drawable/round_circle"
+        android:elevation="30dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/lowerCircle_main"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="612dp"
+        android:background="@drawable/round_circle"
+        android:elevation="30dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="-19dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

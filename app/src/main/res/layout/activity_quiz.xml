@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkBlue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperCircle_quiz">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/segoe"
+                android:letterSpacing="0.1"
+                android:text="@string/question_quiz"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/line"
+                android:importantForAccessibility="no" />
+
+            <RelativeLayout
+                android:id="@+id/btn_1"
+                style="@style/optionBtnLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_opt1"
+                    style="@style/optionBtnTextView"
+                    android:text="@string/letter_a" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/opt_1"
+                    style="@style/optionBtn"
+                    android:layout_toEndOf="@+id/tv_opt1"
+                    android:text="@string/option_quiz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_2"
+                style="@style/optionBtnLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_opt2"
+                    style="@style/optionBtnTextView"
+                    android:text="@string/letter_b" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/opt_2"
+                    style="@style/optionBtn"
+                    android:layout_toEndOf="@+id/tv_opt2"
+                    android:text="@string/option_quiz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_3"
+                style="@style/optionBtnLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_opt3"
+                    style="@style/optionBtnTextView"
+                    android:text="@string/letter_c" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/opt_3"
+                    style="@style/optionBtn"
+                    android:layout_toEndOf="@+id/tv_opt3"
+                    android:text="@string/option_quiz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_4"
+                style="@style/optionBtnLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tv_opt4"
+                    style="@style/optionBtnTextView"
+                    android:text="@string/letter_d" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/opt_4"
+                    style="@style/optionBtn"
+                    android:layout_toEndOf="@+id/tv_opt4"
+                    android:text="@string/option_quiz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/resetBtn_quiz"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/contentDisc_reset"
+                    android:background="@drawable/round_circle"
+                    android:src="@drawable/reset" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nextBtn_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_toStartOf="@id/answerBtn_quiz"
+                    android:layout_toEndOf="@+id/resetBtn_quiz"
+                    android:background="@drawable/yellow_ractangle"
+                    android:fontFamily="@font/segoe"
+                    android:letterSpacing="0.2"
+                    android:paddingVertical="15dp"
+                    android:text="@string/next_btn"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submitBtn_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_toStartOf="@id/answerBtn_quiz"
+                    android:layout_toEndOf="@+id/resetBtn_quiz"
+                    android:background="@drawable/yellow_ractangle"
+                    android:fontFamily="@font/segoe"
+                    android:letterSpacing="0.2"
+                    android:paddingVertical="15dp"
+                    android:text="@string/submit_btn"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkBlue"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/answerBtn_quiz"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/contentDisc_hint"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_circle"
+                    android:src="@drawable/hint" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/upperCircle_quiz"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/round_circle"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/subject_txt"
+        style="@style/headingTextView"
+        android:text="@string/heading_quiz"
+        app:layout_constraintBottom_toBottomOf="@+id/upperCircle_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ImageButton
+        android:id="@+id/backBtn_quiz"
+        style="@style/backBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/upperCircle_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        android:importantForAccessibility="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

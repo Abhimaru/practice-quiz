@@ -1,0 +1,143 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PracticeQuiz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorSecondary">@color/yellow</item>
+    </style>
+
+    <style name="Theme.PracticeQuiz" parent="Base.Theme.PracticeQuiz">
+
+    </style>
+
+    <style name="MainBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginHorizontal">70dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:drawableEnd">@drawable/right_arrow</item>
+        <item name="android:layout_marginVertical">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/btn_white_border</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:shape">rectangle</item>
+    </style>
+
+    <style name="backBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/backbtn</item>
+        <item name="android:src">@drawable/left_arrow</item>
+    </style>
+
+    <style name="headingTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:paddingHorizontal">35dp</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:background">@drawable/textview</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+<!--    OPTION BUTTON STYLES START -->
+    <style name="optionBtnLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:layout_marginHorizontal">25dp</item>
+        <item name="android:background">@drawable/btn_white_border</item>
+    </style>
+
+    <style name="optionBtnTextView">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:background">@drawable/round_circle</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:textColor">@color/darkBlue</item>
+        <item name="android:paddingVertical">7dp</item>
+    </style>
+
+    <style name="optionBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+<!--        OPTION BUTTON STYLES END -->
+
+
+<!--    SCORE ACTIVITY STYLES START -->
+    <style name="txtView_score">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="btn_score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginVertical">10dp</item>
+        <item name="android:layout_marginHorizontal">70dp</item>
+        <item name="android:paddingVertical">15dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/segoe_bold</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+<!--    SCORE ACTIVITY STYLES END -->
+
+    <style name="textInputStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_marginVertical">20dp</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
+    </style>
+
+    <style name="textInputEditTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fontFamily">@font/segoe</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">#78909C</item>
+        <item name="android:importantForAutofill">no</item>
+    </style>
+
+</resources>

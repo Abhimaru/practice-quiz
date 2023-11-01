@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Practice Quiz</string>
+
+    <!--    Main Activity   -->
+    <string name="admin_btn">Admin Login</string>
+    <string name="take_quiz_btn">Take Quiz</string>
+    <string name="contact_btn">Contact</string>
+    <string name="sub_android">Android</string>
+    <string name="sub_bigdata">Big Data</string>
+    <string name="sub_python">Python</string>
+
+    <!--    Subject Activity -->
+    <string name="heading_subject">SELECT SUBJECT</string>
+
+    <!--    Quiz Activity -->
+    <string name="letter_a">A</string>
+    <string name="letter_b">B</string>
+    <string name="letter_c">C</string>
+    <string name="letter_d">D</string>
+    <string name="heading_quiz">SUBJECT NAME</string>
+    <string name="question_quiz">Question</string>
+    <string name="option_quiz">OPTION</string>
+    <string name="next_btn">NEXT</string>
+    <string name="submit_btn">SUBMIT</string>
+    <string name="contentDisc_reset">Reset Button</string>
+    <string name="contentDisc_hint">Hint Button</string>
+
+    <!--    Score Activity -->
+    <string name="heading_score">Your Score</string>
+    <string name="correct_txt">Correct Answer</string>
+    <string name="incorrect_txt">Wrong Answer</string>
+    <string name="percentage_txt">Percentage</string>
+    <string name="score_txt">10 / 10</string>
+    <string name="scorep_txt">99.99 %</string>
+
+    <!--    Admin Login Activity -->
+    <string name="heading_adminLogin">Admin Login</string>
+    <string name="heading_username">Username</string>
+    <string name="heading_password">Password</string>
+    <string name="hint_username">Enter Username</string>
+    <string name="hint_password">Enter Password</string>
+
+    <!--   Admin Operation Activity -->
+    <string name="insert_operation">Insert</string>
+    <string name="update_operation">Update</string>
+    <string name="delete_operation">Delete</string>
+
+    <!--    Insert, Update Activity -->
+    <string name="select_subject">Select Subject</string>
+    <string name="select_question">Select Questions</string>
+    <string name="heading_insert">Add Questions</string>
+    <string name="heading_update">Update Questions</string>
+    <string name="heading_delete">Delete Questions</string>
+    <string name="heading_question">Question</string>
+    <string name="hint_question">Enter Question</string>
+    <string name="heading_optionA">Option A</string>
+    <string name="hint_optionA">Enter Option A</string>
+    <string name="heading_optionB">Option B</string>
+    <string name="hint_optionB">Enter Option B</string>
+    <string name="heading_optionC">Option C</string>
+    <string name="hint_optionC">Enter Option C</string>
+    <string name="heading_optionD">Option D</string>
+    <string name="hint_optionD">Enter Option D</string>
+
+    <string-array name="subjects_list">
+        <item>ANDROID</item>
+        <item>BIGDATA</item>
+        <item>PYTHON</item>
+    </string-array>
+
+
+</resources>
